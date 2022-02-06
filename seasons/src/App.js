@@ -23,14 +23,19 @@ class App extends React.Component {
     console.log("my component was updated to the screen.");
   }
 
-  render() {
+  //helper function
+  renderContent() {
     if (this.state.errorMessage && !this.state.lat) {
       return <div> Error: {this.state.errorMessage} </div>;
     } else if (!this.state.errorMessage && this.state.lat) {
       return <SeasonDisplay lat={this.state.lat} />;
     } else {
-      return <Spinner />;
+      return <Spinner message="Please accept location request" />;
     }
+  }
+
+  render() {
+    return <div className="border red">{this.renderContent()}</div>;
   }
 }
 
