@@ -1,0 +1,7 @@
+Notes from react course. 
+
+3 stargeties on how to fix this keyword in call back not being the component 
+    1. set up a constructor and bind the function to this
+    2. set up the function as an arrow function inline 
+    3. wrap where the function is being called as an arrow function. 
+
