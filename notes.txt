@@ -1,7 +1,12 @@
 Notes from react course. 
 
+THIS keyword--
 3 stargeties on how to fix this keyword in call back not being the component 
     1. set up a constructor and bind the function to this
     2. set up the function as an arrow function inline 
     3. wrap where the function is being called as an arrow function. 
+
+env vars related --  
+react-scripts actually uses dotenv library under the hood. just add the REACT_APP_ prefix to be able to see it. 
+A browser cannot access local or server environment variables so dotenv has nothing to look for.
 
