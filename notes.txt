@@ -10,3 +10,7 @@ env vars related --
 react-scripts actually uses dotenv library under the hood. just add the REACT_APP_ prefix to be able to see it. 
 A browser cannot access local or server environment variables so dotenv has nothing to look for.
 
+React refs
+- Gives access to a single dom element rendered by component 
+- create ref in constructor, assign them to the instance variable and then pass a jsk element as props
+- you can add eventlistners to each ref.current and add calbacks there - just need to make sure component mounted with componentDidMount
