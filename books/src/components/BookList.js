@@ -2,6 +2,7 @@ import { useState } from "react";
 import BookShow from "./BookShow";
 
 function BookList({ books, onDelete, onEdit }) {
+  console.log(books);
   const renderedBooks = books.map((book) => {
     return (
       <BookShow key={book.id} book={book} onDelete={onDelete} onEdit={onEdit} />
