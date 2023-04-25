@@ -1,28 +1,12 @@
 {
   "books": [
     {
-      "tite": "harry potter",
-      "id": 2
+      "title": "Harry Potter book",
+      "id": 1
     },
     {
-      "tite": "dar  tower",
+      "title": "cat in the hat",
       "id": 3
-    },
-    {
-      "title": "1",
-      "id": 4
-    },
-    {
-      "title": "11",
-      "id": 5
-    },
-    {
-      "title": "22222",
-      "id": 6
-    },
-    {
-      "title": "asdasda",
-      "id": 7
     }
   ]
 }
