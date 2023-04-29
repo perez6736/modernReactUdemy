@@ -2,6 +2,10 @@ import Button from "./Button";
 import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
 
 function App() {
+  function handleClick() {
+    console.log("event on button happened.");
+  }
+
   return (
     <div>
       <div>
