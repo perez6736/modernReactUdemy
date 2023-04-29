@@ -12,21 +12,26 @@ function Button({
   rounded,
   ...rest
 }) {
-  let classes = classnames("flex items-center px-3 py-1.5 border font-bold", {
-    "bg-blue-500 hover:bg-blue-700 text-blue-500 border-blue-80": primary,
-    "bg-gray-500 hover:bg-gray-700 text-white border-gray-80": secondary,
-    "bg-green-500 hover:bg-green-700 text-white border-green-80": success,
-    "bg-yellow-500 hover:bg-yellow-700 text-white border-yellow-80": warning,
-    "bg-red-600 hover:bg-red-700 text-white border-red-80 ": danger,
-    "rounded-full": rounded,
-    "bg-white": outline,
+  let classes = classnames(
+    rest.className,
+    "flex items-center px-3 py-1.5 border font-bold",
+    {
+      "bg-blue-500 hover:bg-blue-700 text-blue-500 border-blue-80": primary,
+      "bg-gray-500 hover:bg-gray-700 text-white border-gray-80": secondary,
+      "bg-green-500 hover:bg-green-700 text-white border-green-80": success,
+      "bg-yellow-500 hover:bg-yellow-700 text-white border-yellow-80": warning,
+      "bg-red-600 hover:bg-red-700 text-white border-red-80 ": danger,
+      "rounded-full": rounded,
+      "bg-white": outline,
 
-    "text-blue-500 hover:bg-blue-700 hover:text-white": outline && primary,
-    "text-gray-500 hover:bg-gray-700 hover:text-white": outline && secondary,
-    "text-green-500 hover:bg-green-700 hover:text-white": outline && success,
-    "text-yellow-500 hover:bg-yellow-700 hover:text-white": outline && warning,
-    "text-red-500 hover:bg-red-700 hover:text-white": outline && danger,
-  });
+      "text-blue-500 hover:bg-blue-700 hover:text-white": outline && primary,
+      "text-gray-500 hover:bg-gray-700 hover:text-white": outline && secondary,
+      "text-green-500 hover:bg-green-700 hover:text-white": outline && success,
+      "text-yellow-500 hover:bg-yellow-700 hover:text-white":
+        outline && warning,
+      "text-red-500 hover:bg-red-700 hover:text-white": outline && danger,
+    }
+  );
   classes = twMerge(classes);
 
   return (

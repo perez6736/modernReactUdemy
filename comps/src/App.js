@@ -15,7 +15,7 @@ function App() {
         </Button>
       </div>
       <div>
-        <Button primary rounded outline>
+        <Button className="mb-5" primary rounded outline onClick={handleClick}>
           <GoCloudDownload /> Primary
         </Button>
       </div>
