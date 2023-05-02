@@ -16,7 +16,7 @@ function Button({
     rest.className,
     "flex items-center px-3 py-1.5 border font-bold",
     {
-      "bg-blue-500 hover:bg-blue-700 text-blue-500 border-blue-80": primary,
+      "bg-blue-500 hover:bg-blue-700 text-white border-blue-80": primary,
       "bg-gray-500 hover:bg-gray-700 text-white border-gray-80": secondary,
       "bg-green-500 hover:bg-green-700 text-white border-green-80": success,
       "bg-yellow-500 hover:bg-yellow-700 text-white border-yellow-80": warning,
