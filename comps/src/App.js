@@ -1,50 +1,25 @@
-import Button from "./components/Button";
-import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
+import Accordion from "./components/Accordion";
 
 function App() {
-  function handleClick() {
-    console.log("event on button happened.");
-  }
-
-  return (
-    <div>
-      <div>
-        <Button className="mb-5">
-          <GoCloudDownload />
-          Plain
-        </Button>
-      </div>
-      <div>
-        <Button className="mb-5" primary rounded outline onClick={handleClick}>
-          <GoCloudDownload /> Primary
-        </Button>
-      </div>
-      <div>
-        <Button className="mb-5" secondary>
-          <GoBell />
-          Secondary
-        </Button>
-      </div>
-      <div>
-        <Button className="mb-5" outline danger>
-          <GoDatabase />
-          Danger
-        </Button>
-      </div>
-      <div>
-        <Button className="mb-5" success>
-          <GoBell />
-          Success
-        </Button>
-      </div>
-      <div>
-        <Button className="mb-5" warning rounded>
-          <GoBell />
-          Warning
-        </Button>
-      </div>
-    </div>
-  );
+  const items = [
+    {
+      id: 1,
+      label: "this is a test label",
+      content: "this is a test content bloc of text",
+    },
+    {
+      id: 2,
+      label: "we need another label test",
+      content: "we need anbother bloc of text to act as a test.",
+    },
+    {
+      id: 3,
+      label: "just making up a label now",
+      content:
+        "this is also another bloc of text used for some other label i made up",
+    },
+  ];
+  return <Accordion items={items} />;
 }
 
 export default App;
