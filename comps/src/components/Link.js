@@ -1,10 +1,14 @@
 import useNavi from "../hooks/use-navi";
 import classNames from "classnames";
 
-function Link({ to, children }) {
-  const { navigate } = useNavi();
+function Link({ to, children, className, activeclassName }) {
+  const { navigate, currentPath } = useNavi();
 
-  const classes = classNames("text-blue-500");
+  const classes = classNames(
+    "text-blue-500",
+    className,
+    currentPath === to && activeclassName
+  );
 
   const handleClick = (event) => {
     if (event.metaKey || event.ctrlKey) return;
