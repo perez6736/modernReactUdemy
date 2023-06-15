@@ -1,14 +1,33 @@
 import { useState, useEffect } from "react";
 import Button from "../components/Button";
-import useCounter from "../hooks/use-counter";
+import Panel from "../components/Panel";
 
 function CounterPage({ intialCount }) {
-  const { count, increment } = useCounter(intialCount);
+  const [count, setCount] = useState(intialCount);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    setCount(count - 1);
+  };
   return (
-    <div>
-      <h1>count is {count}</h1>
-      <Button onClick={increment}>add to count</Button>
-    </div>
+    <Panel className="m-3">
+      <h1 className="text-lg">count is {count}</h1>
+      <div className="flex flex-row">
+        <Button onClick={increment}>increment</Button>
+        <Button onClick={decrement}>decrement</Button>
+      </div>
+      <form>
+        <label>Add a lot</label>
+        <input
+          type="number"
+          className="p-1 m-3 bg-gray-50 border border-gray-300"
+        />
+        <Button>Add it</Button>
+      </form>
+    </Panel>
   );
 }
 
