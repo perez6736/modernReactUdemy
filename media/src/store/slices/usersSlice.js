@@ -17,7 +17,7 @@ const usersSlice = createSlice({
     });
     builder.addCase(fetchUsers.fulfilled, (state, action) => {
       state.isLoading = false;
-      state.data = action.payload;
+      state.data = action.payload; //aciton payload is what gets returned from the api call.
     });
     builder.addCase(fetchUsers.rejected, (state, action) => {
       state.isLoading = false;
