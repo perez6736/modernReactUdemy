@@ -3,6 +3,7 @@ import Button from "./Button";
 import { deleteUser } from "../store";
 import { useThunk } from "../hooks/use-thunk";
 import ExpandablePanel from "./ExpandablePanel";
+import AlbumsList from "./AlbumsList";
 
 function UsersListItem({ user }) {
   const [doRemoveUser, isLoading, error] = useThunk(deleteUser);
@@ -21,7 +22,11 @@ function UsersListItem({ user }) {
     </>
   );
 
-  return <ExpandablePanel header={header}>Content</ExpandablePanel>;
+  return (
+    <ExpandablePanel header={header}>
+      <AlbumsList user={user} />
+    </ExpandablePanel>
+  );
 }
 
 export default UsersListItem;
