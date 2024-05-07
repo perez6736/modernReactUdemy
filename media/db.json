@@ -15,8 +15,28 @@
     {
       "id": "5fd8",
       "name": "Lorraine Gutmann"
+    },
+    {
+      "id": "76c3",
+      "name": "Erin Schmidt"
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 1,
+      "title": "album Yellow",
+      "userId": "2c5b"
+    },
+    {
+      "id": "239b",
+      "userId": "2c5b",
+      "title": "Rustic Soft Mouse"
+    },
+    {
+      "id": "0d65",
+      "userId": "2c5b",
+      "title": "Intelligent Concrete Bacon"
+    }
+  ],
   "photos": []
 }
