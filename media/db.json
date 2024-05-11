@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "id": "2c5b",
-      "name": "Wilbur Douglas"
-    },
-    {
       "id": "4ade",
       "name": "Toni Ernser"
     },
@@ -19,24 +15,79 @@
     {
       "id": "76c3",
       "name": "Erin Schmidt"
+    },
+    {
+      "id": "368f",
+      "name": "Cesar White"
     }
   ],
   "albums": [
     {
-      "id": 1,
-      "title": "album Yellow",
-      "userId": "2c5b"
+      "id": "6cb2",
+      "userId": "4ade",
+      "title": "Practical Steel Bike"
     },
     {
-      "id": "239b",
-      "userId": "2c5b",
-      "title": "Rustic Soft Mouse"
+      "id": "46a4",
+      "userId": "4ade",
+      "title": "Fantastic Fresh Computer"
     },
     {
-      "id": "0d65",
-      "userId": "2c5b",
-      "title": "Intelligent Concrete Bacon"
+      "id": "2c0d",
+      "userId": "4ade",
+      "title": "Handcrafted Wooden Shoes"
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "id": "8c1b",
+      "albumId": "46a4",
+      "url": "https://loremflickr.com/150/150/abstract?lock=77714"
+    },
+    {
+      "id": "7b09",
+      "albumId": "2c0d",
+      "url": "https://loremflickr.com/150/150/abstract?lock=81222"
+    },
+    {
+      "id": "b326",
+      "albumId": "46a4",
+      "url": "https://loremflickr.com/150/150/abstract?lock=32789"
+    },
+    {
+      "id": "e34b",
+      "albumId": "46a4",
+      "url": "https://loremflickr.com/150/150/abstract?lock=25975"
+    },
+    {
+      "id": "153a",
+      "albumId": "2c0d",
+      "url": "https://loremflickr.com/150/150/abstract?lock=57935"
+    },
+    {
+      "id": "d29f",
+      "albumId": "2c0d",
+      "url": "https://loremflickr.com/150/150/abstract?lock=14659"
+    },
+    {
+      "id": "402f",
+      "albumId": "46a4",
+      "url": "https://loremflickr.com/150/150/abstract?lock=71872"
+    },
+    {
+      "id": "6ac0",
+      "albumId": "6cb2",
+      "url": "https://loremflickr.com/150/150/abstract?lock=26691"
+    },
+    {
+      "id": "b728",
+      "albumId": "6cb2",
+      "url": "https://loremflickr.com/150/150/abstract?lock=40568"
+    },
+    {
+      "id": "54fc",
+      "albumId": "6cb2",
+      "url": "https://loremflickr.com/150/150/abstract?lock=55851"
+    }
+  ]
 }
