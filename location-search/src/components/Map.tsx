@@ -3,7 +3,6 @@ import type { Place } from "../api/Place";
 import type { Map as LeafletMap } from "leaflet";
 import { useEffect, useRef } from "react";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
-import { current } from "@reduxjs/toolkit";
 
 interface MapProps {
   place: Place | null;
